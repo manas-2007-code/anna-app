@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
+@import 'leaflet/dist/leaflet.css';
+
+@import "tailwindcss";
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #FAF6EE;
+  color: #1C1917;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-serif-title {
+  font-family: 'Playfair Display', serif;
+}
+
+.marker-urgent-pulse {
+  box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.7);
+  animation: pulse-ring 1.6s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.9); box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.7); }
+  70% { transform: scale(1.1); box-shadow: 0 0 0 16px rgba(220, 38, 38, 0); }
+  100% { transform: scale(0.9); box-shadow: 0 0 0 0 rgba(220, 38, 38, 0); }
+}
